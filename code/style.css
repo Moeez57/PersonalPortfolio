@@ -1,0 +1,705 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  line-height: 1.2;
+  font-family: sans-serif;
+    /* overflow: hidden; */
+}
+
+
+/* .header-container::after */
+.header-container::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  filter: blur(8px);
+}
+
+.header-container .content {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)translateY(-50%);
+  z-index: 1;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  border-radius: 100px;
+}
+
+.text {
+  height: 100px;
+  width: 350px;
+  text-align: center;
+  padding: 15px 25px;
+  border: 5px solid black;
+  border-radius: 100px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.text h1{
+  font-size: 2.5rem;
+}
+
+.text p{
+  font-size: 1.2rem;
+  color:white;
+}
+
+.header-container:hover::after{
+  filter:blur(2px);
+}
+
+
+.navbar-area{
+  width:30%;
+  height:100vh;
+  position: absolute;
+  z-index: 2;
+  right:0%;
+  background-color: #555;
+  color:white;
+  opacity:0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+}
+
+nav ul{
+  width:100%;
+  height:100vh;
+  list-style: none;
+  display:grid;
+  grid-template-rows: repeat(6,1fr);
+  justify-items:center;
+  align-items:center;
+}
+
+nav ul li{
+
+}
+
+nav ul li a {
+  color:white;
+  border:2px solid white;
+  padding:10px 20px;
+  text-decoration: none;
+}
+
+nav ul li a:hover{
+  background-color: #eaeaea;
+  color:#333;
+}
+
+
+
+.hamburger{
+  cursor: pointer;
+  position: absolute;
+  right:5%;
+  top:5%;
+  z-index: 3;
+}
+
+.hamburger .burger{
+  width:30px;
+  height:3px;
+  background-color: white;
+  margin:5px;
+}
+
+/*  SKILLS PAGE */
+
+.section-container::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  filter:blur(20px);
+
+}
+.section-container .skills-content{
+  position: absolute;
+  width:95%;
+  margin:0 auto;
+  height:500px;
+  z-index: 1;
+  top:20%;
+  pointer-events: none;
+  overflow-y: hidden;
+}
+
+.title{
+  font-size: 3.5rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+.skills-content .grid-class{
+  width:95%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+
+}
+
+.skills-content .grid-class-elements{
+    grid-template-rows: 500px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+.sub-title{
+  font-size: 1.75rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  color:black;
+    margin-bottom: 25px;
+}
+
+.grid-class ol{
+  font-size: 1.25rem;
+  font-style: italic;
+  padding-left: 25px;
+}
+
+.grid-class ol li{
+  padding:5px;
+}
+
+.sub-sub-title{
+  font-size: 1.35rem;
+  font-style: italic;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/*  PROJECTS*/
+
+.projects-container::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  filter:blur(20px);
+
+}
+.projects-container .projects-content{
+  position: absolute;
+  width:95%;
+  margin:0 auto;
+  height:500px;
+  z-index: 1;
+  top:20%;
+}
+
+.projects-content .grid-class{
+  height:400px;
+  width:90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+}
+.projects-content .grid-class-elements{
+  padding:20px;
+  grid-auto-rows:250px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.title-description{
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+ .grid-class-elements .products-p{
+   font-size: 1.5rem;
+   margin-bottom: 25px;
+ }
+.grid-class-elements .links{
+  font-size: 1.5rem;
+  color:black;
+   padding:10px;
+  border:2px solid #111;
+
+  border-radius: 50px;
+  text-decoration: none;
+}
+.grid-class-elements .links:hover{
+  background-color: #eaeaea;
+  color:#333;
+}
+
+.see-here{
+  font-size: 1rem;
+  font-weight: bold;
+  display: none;
+}
+
+.see-here .links{
+  margin-left:15px;
+}
+
+
+/*  CONTACT PAGE*/
+
+
+.contact-container::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  filter:blur(20px);
+
+}
+.contact-container .contact-content{
+  position: absolute;
+  width:95%;
+  margin:0 auto;
+  height:500px;
+  z-index: 1;
+  top:20%;
+}
+
+.contact-grid{
+  width:80%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+i{
+  padding-left:50px;
+  padding-right: 50px;
+}
+span{
+  font-size: 1.5rem;
+}
+.contact-grid .contact-grid-elements{
+  grid-auto-rows:  300px;
+  border:2px solid black;
+  border-radius: 50px;
+}
+.contact-grid-elements a{
+    color:black;
+}
+
+.contact-grid-elements a:hover{
+  padding:10px;
+  background-color: #eaeaea;
+  color: #333;
+}
+
+
+/*  Education page */
+
+.education-container::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  filter:blur(20px);
+
+}
+.education-container .education-content{
+  position: absolute;
+  width:95%;
+  margin:0 auto;
+  height:400px;
+  z-index: 1;
+  top:20%;
+}
+
+.education-content .grid-class{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:30px;
+}
+.education-content .grid-class-elements{
+  grid-auto-rows: 300px;
+  padding:15px;
+  border:2px solid black;
+  border-radius: 50px;
+}
+
+.education-content p{
+  font-size: 1.25rem;
+  padding-left: 5px;
+}
+
+#pcit{
+  font-size: 1.11rem;
+}
+
+
+/*  about page */
+
+.about-container::after{
+  content: '';
+  width: 100%;
+  height: 100vh;
+  background-image: url('images/7.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  filter:blur(20px);
+
+}
+.about-container .about-content{
+  position: absolute;
+  width:95%;
+  margin:0 auto;
+  height:500px;
+  z-index: 1;
+  top:20%;
+}
+
+.about-content .grid-class{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:20px;
+
+}
+.about-content .grid-class-contents{
+   grid-auto-rows: 400px;
+   padding:15px;
+   border:2px solid black;
+   border-radius: 50px;
+
+}
+.about-content label{
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin:10px 0px;
+}
+
+.about-content p{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+
+.about-content h5{
+  font-size: 1.5px;
+  margin-top:15px;
+}
+
+
+#career{
+  padding-top:25px;
+  font-size: 1.5rem;
+}
+
+
+
+
+/*   MEDIA QUIEIERS */
+
+
+@media screen and (max-width:540px)
+{
+
+  .header-container::after{
+    content: '';
+    width: 100%;
+     height: 125vh;
+  }
+
+  .navbar-area{
+    width:100%;
+  }
+
+  nav ul{
+    width:100%;
+    height:100vh;
+  }
+  img {
+    width: 140px;
+    height: 140px;
+    margin-left: 115px;
+  }
+
+  .text {
+    width: 300px;
+    text-align: center;
+    margin-left:25px;
+  }
+  .text h1{
+    font-size: 2rem;
+  }
+
+  .text p{
+    font-size: 1.1rem;
+    color:white;
+  }
+
+
+
+/* SKILLS PAGE */
+
+
+.section-container::after{
+  content: '';
+  width: 100%;
+  height: 250vh;
+  filter:blur(40px);
+
+}
+.section-container .skills-content{
+  width:98%;
+  margin:0 auto;
+  height:1350px;
+}
+.skills-content .grid-class{
+  display: grid;
+grid-template-columns: 1fr;
+    grid-gap: 35px;
+}
+
+.skills-content .grid-class-elements{
+  grid-auto-rows: 500px;
+  padding:15px 0px 15px 15px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+.sub-title{
+  font-size: 1.5rem;
+}
+/*  project page */
+
+.projects-container::after{
+  /* content: '';
+  width: 100%; */
+  height: 250vh;
+}
+.projects-container .projects-content{
+  position: absolute;
+  width:98%;
+  margin:0 auto;
+  height:1000px;
+}
+
+.projects-content .grid-class{
+  height:800px;
+display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+
+
+}
+.projects-content .grid-class-elements{
+  grid-auto-rows: 300px;
+  padding:10px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+
+
+.title-description{
+  font-size: 1.25rem;
+  font-style: italic;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+ .grid-class-elements .products-p{
+   font-size: 1.1rem;
+   margin-bottom: 25px;
+
+ }
+
+.projects-content .grid-class-elements{
+  position: relative;
+}
+.grid-class-elements .links{
+  font-size: 1.25rem;
+  color:black;
+  position: absolute;
+  left:5%;
+   padding:20px;
+  border:2px solid #111;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.grid-class-elements .links:hover{
+  background-color: #eaeaea;
+  color:#333;
+}
+
+
+/*  proect page end*/
+
+
+
+/*  Education page */
+
+.education-container::after{
+  height: 220vh;
+}
+.education-container .education-content{
+  width:98%;
+  margin:0 auto;
+  height:1000px;
+}
+
+.education-content .grid-class{
+  display: grid;
+  grid-template-columns: 1fr;
+    grid-gap:25px;
+}
+.education-content .grid-class-elements{
+  padding:20px;
+  grid-auto-rows: 350px;
+  border:2px solid black;
+  border-radius: 50px;
+}
+
+.education-content p{
+  font-size: 1.25rem;
+  padding-left: 5px;
+}
+
+#pcit{
+  font-size: 1.11rem;
+}
+
+
+/* education page end */
+
+/* about page */
+
+.about-container::after{
+  height: 250vh;
+}
+.about-content{
+  width:98%;
+  margin:0 auto;
+  height:1350px;
+}
+
+.about-content .grid-class{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 35px;
+}
+
+.about-content .grid-class-elements{
+  grid-auto-rows: 350px;
+}
+
+.about-content label{
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin:10px 0px;
+}
+
+.about-content p{
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+
+.about-content h5{
+  font-size: 1.75px;
+  margin-top:15px;
+}
+
+
+#career{
+  padding-top:20px;
+  font-size: 1.5rem;
+}
+
+
+/*  aboyt  page end*/
+
+
+/* contact PAGE */
+
+
+.contact-container::after{
+  height: 210vh;
+}
+.contact-container .contact-content{
+  width:98%;
+  margin:0 auto;
+  height:1100px;
+}
+.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 35px;
+}
+.contact-content .contact-grid-elements{
+  grid-auto-rows: 450px;
+  padding:15px;
+  border:2px solid black;
+  border-radius: 50px;
+}
+
+.contact-grid .contact-grid-elements i{
+  display: block;
+  padding-left:100px;
+}
+span{
+  padding:10px;
+  display: block;
+  font-size: 1.5rem;
+}
+
+
+/* contact page end  */
+
+}

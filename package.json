@@ -1,0 +1,16 @@
+{
+  "name": "portfoliodeployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d code"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage":"https://moeez57.github.io/PersonalPortfolio",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
